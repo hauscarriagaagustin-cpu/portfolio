@@ -158,6 +158,7 @@
 <a class="btn out" href="https://github.com/hauscarriagaagustin-cpu" target="_blank" rel="noopener noreferrer">GitHub</a>
 <a class="btn out" href="https://www.linkedin.com/in/agustin-hauscarriaga-771a12449/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
 </div>
+<p class="mail-line">¿No se abre tu app de correo? Escribime a <a href="mailto:hauscarriagaagustin@gmail.com">hauscarriagaagustin@gmail.com</a> <button type="button" class="btn out" id="copy">Copiar email</button> <span id="copied" role="status"></span></p>
 </div>
 </div>
 </section>
@@ -179,6 +180,8 @@ const set=o=>{m.classList.toggle('open',o);b.setAttribute('aria-expanded',o)};
 b.addEventListener('click',()=>set(b.getAttribute('aria-expanded')!=='true'));
 m.addEventListener('click',e=>{if(e.target.closest('a'))set(false)});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){set(false);b.focus()}});
+const cp=document.getElementById('copy'),ms=document.getElementById('copied');
+cp.addEventListener('click',async()=>{try{await navigator.clipboard.writeText('hauscarriagaagustin@gmail.com');ms.textContent='Email copiado'}catch(e){ms.textContent='No se pudo copiar, seleccionalo a mano.'}});
 </script>
 </body>
 </html>
