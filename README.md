@@ -82,6 +82,4 @@ Lighthouse en modo mobile sobre el sitio publicado:
 |---|---|---|---|
 | 99 | 100 | 100 | 100 |
 
-## Capturas
 
-Las capturas del sitio, del reporte de Lighthouse y de la comparación entre Figma y sitio están en la carpeta [`docs/`](docs/).
