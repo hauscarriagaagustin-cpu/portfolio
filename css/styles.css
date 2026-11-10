@@ -27,6 +27,8 @@ nav ul{list-style:none;margin:0;padding:0;display:none;position:absolute;left:0;
 nav ul.open{display:block}
 nav li a{display:block;padding:var(--s2) 0;color:var(--ink);text-decoration:none;font-weight:500}
 nav li a:hover{color:var(--accent);text-decoration:underline}
+.actions{display:flex;gap:var(--s2);align-items:center}.hdr-cta{padding:0 var(--s3)}
+.tag{display:inline-block;background:#E4EFEC;color:var(--primary-d);font-weight:600;font-size:.8125rem;border-radius:99px;padding:2px 10px;margin-left:var(--s2)}
 .hero{display:grid;gap:var(--s5);align-items:center}
 .badge{display:inline-block;background:#E4EFEC;color:var(--primary-d);font-weight:600;font-size:.875rem;padding:var(--s1) var(--s3);border-radius:99px;margin-bottom:var(--s3)}
 .lead{font-size:1.125rem;color:var(--soft)}.loc{color:var(--soft);font-size:.875rem}
@@ -57,7 +59,7 @@ footer a{color:#fff}footer a:hover{color:#F2C7A8}
 footer .cols{display:grid;gap:var(--s4)}footer ul{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:var(--s3)}
 .case section{padding-block:var(--s5)}.case figure{margin:var(--s4) 0}.case figcaption{color:var(--soft);font-size:.875rem;margin-top:var(--s2)}
 @media (min-width:768px){.wrap{padding-inline:var(--s5)}.grid.c2,.grid.c4{grid-template-columns:repeat(2,1fr)}.about{grid-template-columns:auto 1fr;align-items:start}.contact{padding:var(--s7)}footer .cols{grid-template-columns:1fr 1fr}}
-@media (min-width:1024px){.menu-btn{display:none}nav ul{display:flex;gap:var(--s4);position:static;border:0;padding:0;background:none;align-items:center}nav li a{padding:var(--s2) 0}
+@media (min-width:1024px){.actions{display:none}.menu-btn{display:none}nav ul{display:flex;gap:var(--s4);position:static;border:0;padding:0;background:none;align-items:center}nav li a{padding:var(--s2) 0}
 .hero{grid-template-columns:1.1fr 1fr}.grid.c3{grid-template-columns:repeat(3,1fr)}.grid.c4{grid-template-columns:repeat(4,1fr)}.about .grid{grid-template-columns:repeat(3,1fr)}}
 @media (min-width:768px) and (max-width:1023px){.grid.c3{grid-template-columns:repeat(2,1fr)}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
